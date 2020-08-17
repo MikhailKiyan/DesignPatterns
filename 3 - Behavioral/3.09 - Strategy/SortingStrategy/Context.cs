@@ -8,8 +8,13 @@ namespace SortingStrategy {
         int[] array = {3, 5, 1, 2, 55};
 
         public Context(BaseStrategy strategy) {
-            this.strategy = strategy;
+            this.strategy = strategy ?? throw new ArgumentNullException(nameof(strategy));
         }
+
+        public void ChangeStrategy(BaseStrategy strategy) { 
+            this.strategy = strategy ?? throw new ArgumentNullException(nameof(strategy));
+        }
+            
 
         public void Sort() {
             strategy.Sort(ref array);
