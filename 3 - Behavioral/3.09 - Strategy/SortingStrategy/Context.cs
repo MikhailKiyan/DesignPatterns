@@ -14,7 +14,6 @@ namespace SortingStrategy {
         public void ChangeStrategy(BaseStrategy strategy) { 
             this.strategy = strategy ?? throw new ArgumentNullException(nameof(strategy));
         }
-            
 
         public void Sort() {
             strategy.Sort(ref array);
