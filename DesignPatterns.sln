@@ -3,9 +3,40 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1169
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Creational", "1 - Creational", "{125868D3-CC00-4952-B03D-86128541A2BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Structural", "2 - Structural", "{2F03E1F9-D693-424A-A811-9DE4982B74A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Behavioral", "3 - Behavioral", "{1B2A5D72-6860-44C8-A9C3-9F9CBE9508DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.09 - Strategy", "3.09 - Strategy", "{CBE4BA62-899D-470F-9BBC-185A5A204EFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DuckBehavior", "3 - Behavioral\3.09 - Strategy\DuckBehavior\DuckBehavior.csproj", "{5709456D-5530-4433-9A1A-80AE864C3DC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingStrategy", "3 - Behavioral\3.09 - Strategy\SortingStrategy\SortingStrategy.csproj", "{0DADE7FC-C081-4569-93F1-12C3E2D2BBB8}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5709456D-5530-4433-9A1A-80AE864C3DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5709456D-5530-4433-9A1A-80AE864C3DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5709456D-5530-4433-9A1A-80AE864C3DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5709456D-5530-4433-9A1A-80AE864C3DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DADE7FC-C081-4569-93F1-12C3E2D2BBB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DADE7FC-C081-4569-93F1-12C3E2D2BBB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DADE7FC-C081-4569-93F1-12C3E2D2BBB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DADE7FC-C081-4569-93F1-12C3E2D2BBB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBE4BA62-899D-470F-9BBC-185A5A204EFD} = {1B2A5D72-6860-44C8-A9C3-9F9CBE9508DA}
+		{5709456D-5530-4433-9A1A-80AE864C3DC6} = {CBE4BA62-899D-470F-9BBC-185A5A204EFD}
+		{0DADE7FC-C081-4569-93F1-12C3E2D2BBB8} = {CBE4BA62-899D-470F-9BBC-185A5A204EFD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B75B7F8F-6089-4E82-B10A-3D55066A28F7}
